@@ -356,6 +356,7 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'bkad/camelcasemotion'
     Plug 'scrooloose/nerdcommenter'
     Plug 'mileszs/ack.vim'
+    Plug 'w0rp/ale'
 
     " TODO: syntastic
     " TODO: ale ?
@@ -372,6 +373,9 @@ endif
 
 let g:ctrlp_map = '<leader>,'
 let g:ctrlp_show_hidden = 1
+
+" Look in current working directory, instead of traversing up to find a .git
+let g:ctrlp_working_path_mode = 0
 
 noremap  <F2> :NERDTreeToggle<cr>
 inoremap <F2> <esc>:NERDTreeToggle<cr>
@@ -393,3 +397,10 @@ if executable('rg')
 elseif executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" Only lint when saving
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+
+" Automatically open linter list
+let g:ale_open_list = 1
