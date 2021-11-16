@@ -252,6 +252,9 @@ nnoremap <C-k>  <C-w>k
 nnoremap <C-l>  <C-w>l
 nnoremap <leader>v :rightbelow vnew<CR>
 
+" Previous buffer
+noremap ` <C-^>
+
 " ==============================================================================
 " MAPPINGS - UTILITY
 " ==============================================================================
