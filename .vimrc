@@ -15,6 +15,7 @@
 " Things to remember:
 "   - dedent with Ctrl-D
 "   - spellcheck: set spell!
+"   - windo diffthis / diffoff
 "   - use noun ) for next sentence
 "   - dictionary word completion: C-X C-K
 "   - substitute last search: %s//<replacement text>/g
