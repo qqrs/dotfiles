@@ -4,6 +4,8 @@ spoon.ShiftIt:bindHotkeys({})
 hs.loadSpoon("Cherry")
 spoon.Cherry:bindHotkeys({start = {{"cmd", "alt"}, "P"}})
 
+hs.loadSpoon("Chimer")
+
 -- Launch new iTerm window on current desktop
 hs.hotkey.bind({"cmd", "alt"}, "T", function()
 	if hs.application.find("iTerm") then
@@ -51,4 +53,3 @@ end)
 hs.hotkey.bind({"cmd", "alt"}, "K", function()
 	hs.application.launchOrFocus("KeepassXC")
 end)
-
