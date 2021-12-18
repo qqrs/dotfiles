@@ -359,6 +359,12 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'mileszs/ack.vim'
     Plug 'w0rp/ale'
 
+    Plug 'nvie/vim-flake8'
+    Plug 'Vimjas/vim-python-pep8-indent'
+    Plug 'rust-lang/rust.vim'
+
+    " Also need: brew install flake8
+
     " TODO: syntastic
     " TODO: ale ?
 
@@ -404,4 +410,4 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_insert_leave = 0
 
 " Automatically open linter list
-let g:ale_open_list = 1
+"let g:ale_open_list = 1
